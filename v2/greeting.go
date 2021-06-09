@@ -26,7 +26,7 @@ func Do(t time.Time) string {
 // 04:00-09:59: おはよう
 // 10:00-16:59: こんにちは
 // 17:00-03:59: こんばんは
-ffunc DoNow() string {
+func DoNow() string {
 	t := time.Now()
 	switch h := t.Hour(); {
 	case h >= 4 && h <= 9:
